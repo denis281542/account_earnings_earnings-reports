@@ -196,11 +196,12 @@ header {
 
 .link-content {
     position: absolute;
-    display: none;
+    opacity: 0;
     background: #050505;
     min-width: 245px;
     padding: 27px 20px;
     border-radius: 8px;
+    transition: width 2s;
 
     li {
         margin-bottom: 12px;
@@ -221,7 +222,8 @@ header {
 } 
 
 .menu__item:hover .link-content {
-    display: block;
+    opacity: 1;
+    transition: .5s;
 }
 
 .link__home__inner {
